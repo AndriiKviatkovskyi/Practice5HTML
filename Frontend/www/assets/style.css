@@ -1,0 +1,545 @@
+html{
+    min-width: 800px;
+}
+
+#top_badge {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(0px 0px, 0px 75px, 50px 50px, 100px 75px, 100px 0px);
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    z-index: 999;
+    overflow: hidden;
+    margin-left: 20px;
+    border-radius: 0px;
+}
+
+#bottom_badge{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 150px;
+    clip-path: polygon(0px 0px, 0px 150px, 100px 150px, 100px 0px, 50px 25px);
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    z-index: 999;
+    overflow: hidden;
+    margin-left: 20px;
+    border-radius: 0px;
+    padding-top: 25px;
+
+}
+
+
+#top_badge span, #bottom_badge span {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+#header {
+     background-color: rgb(0, 0, 0, 70%);
+     position: fixed;
+     top: 0;
+     width: 80%;
+    height: 5%;
+ }
+
+#top-row{
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: flex-start;
+    height: 50%;
+}
+
+#top-row-main{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+#top-row-main span{
+    color: lightgrey;
+    padding-right: 3%;
+}
+
+#bottom-row{
+    height: 50%;
+}
+#bottom-row span{
+    color: white;
+    padding-right: 3%;
+}
+
+#main-header{
+    margin-left: 150px;
+    margin-right: 100px;
+    height: 100%;
+}
+
+#login_div{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+#login{
+    background-color:orange;
+    border-color:orange;
+    color: white;
+    border-radius: 5px;
+}
+
+#main-section{
+    width: 80%;
+}
+
+#order_section{
+    width: 20%;
+}
+
+#main-section{
+    display: block;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+#main-top{
+    display: block;
+    justify-content: center;
+}
+
+#all-pizzas, #pizza-filter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#all-pizzas span{
+    margin:3px;
+    font-weight: bold;
+}
+
+#all-pizzas-label{
+    font-size: 28px;
+}
+
+#pizza-filter span{
+    margin:10px;
+    padding: 10px;
+}
+
+.selected{
+    background-color: orange;
+    color: white;
+}
+
+.unselected{
+    background-color: cornsilk;
+    color: orange;
+}
+
+#pizza-counter{
+    padding-top: 11px;
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+#discount-span{
+    border-top: black;
+    border-top-style: dotted;
+    border-top-width: 1px;
+}
+
+#pizza-section{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+body{
+    background-color: cornsilk;
+    display: flex;
+}
+
+.pizza-name{
+    font-weight: bold;
+    color:orange;
+}
+
+.pizza-type{
+    color: gray;
+}
+
+.pizza-size-div{
+    display: flex;
+}
+
+.small-size-div, .large-size-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    align-items: center;
+}
+
+.small-size-div-full, .large-size-div-full{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 1px;
+      align-items: center;
+  }
+
+.small-size-div h5, .large-size-div h5, .small-size-div-full h5, .large-size-div-full h5{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.small-size-div h3, .large-size-div h3, .small-size-div-full h3, .large-size-div-full h3{
+    margin-bottom: 1px;
+}
+
+.small-size-div button, .large-size-div button, .small-size-div-full button, .large-size-div-full button{
+    margin-top: 5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.buy{
+    background-color: orange;
+    border-color: orange;
+    color:white;
+    border-radius: 5px;
+}
+
+#bottom-section{
+    height: 100px;
+    background-color: white;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: gray;
+}
+
+#bottom-section h4{
+    text-align: center;
+}
+
+#order_section{
+    width: 400px;
+    height: 100%;
+    border-width: 1px;
+    border-color: darkgray;
+    border-left-style: solid;
+    position: fixed;
+    right: 0px;
+}
+
+#order-top{
+    height: 5%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+#order-info{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    align-items: center;
+}
+
+#order-label{
+    margin-right:3px;
+    font-weight: bold;
+}
+
+#order-count{
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+#clear-order-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+    align-items: center;
+}
+
+#clear-order-div h6{
+    color: gray;
+    margin-top: 12px;
+}
+
+#order-main{
+    background-color: whitesmoke;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza-order{
+    width: 100%;
+    height: 150px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: darkgray;
+    display: flex;
+    flex-direction: row;
+}
+
+.pizza-order-main{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza-order-name{
+    height: 33%;
+    width: 100%;
+    color: orange;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.pizza-order-information{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pizza-order-information h4{
+    margin: 0px 10px 10px;
+}
+
+.pizza-order-counter{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pizza-order-price{
+    width: 33%;
+    height: 80%;
+    text-align: center;
+}
+
+.pizza-order-counter-center{
+    width: 46%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.minus{
+    background-color: red;
+    border-color: red;
+    color:white;
+    font-weight: bold;
+    border-radius: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.plus{
+    background-color: limegreen;
+    border-color: limegreen;
+    color:white;
+    font-weight: bold;
+    border-radius: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.pizza-order-quantity{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.pizza-order-cancel-div{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.pizza-order-cancel{
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    border-color: white;
+    color:orange;
+    font-weight: bold;
+    border-radius: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+.pizza-order-img{
+    width: 35%;
+}
+
+.pizza-order-img img{
+    margin-top: 5%;
+    height: 90%;
+    width: 100%;
+}
+
+
+#order-total{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+}
+
+#order-sum{
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#order-sum h4{
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#order-sum h3{
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#order-submit-div{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+#order-submit{
+    margin: 20px;
+    width: 80%;
+    background-color: orange;
+    border-color: orange;
+    color:white;
+    border-radius: 5px;
+}
+
+@media (max-width: 1800px) {
+
+    #header{
+        width: 75%;
+    }
+
+    #top-row-main{
+        width: 75%;
+    }
+    #login_div{
+        width: 25%;
+    }
+
+
+
+}
+
+@media (max-width: 1600px) {
+
+    #main-section{
+        width: 75%;
+    }
+
+    #header{
+        width: 75%;
+    }
+
+    #top-row-main{
+        width: 90%;
+    }
+
+    #login_div{
+        width: 10%;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    #main-section{
+        width: 69%;
+    }
+
+    #pizza-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #header{
+        width: 69%;
+    }
+
+    #top-row-main{
+        width: 80%;
+        visibility: hidden;
+    }
+
+    #login_div{
+        width: 20%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    #main-section{
+        width: 50%;
+    }
+
+    #pizza-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    #header{
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    html{
+        min-width: 800px;
+    }
+}
+
+
+
+
+
+
